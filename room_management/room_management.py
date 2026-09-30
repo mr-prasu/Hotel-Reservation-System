@@ -13,7 +13,7 @@ def registration():
     global l
     while True:
         name = input("enter name:")
-        if name.isalpha():
+        if name and all(i.isalpha() or i.isspace() fro i in name):
             break
         else:
             print("name must be alphabets")
